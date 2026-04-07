@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from flask import Flask, request, jsonify, json
+from flask import Flask, request, jsonify, json,render_template
 from flask_cors import CORS
 
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-   return "Zdravo brate"
+   return render_template("index.html")
 
 
 @app.route("/primer-string")
