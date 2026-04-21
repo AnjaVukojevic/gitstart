@@ -13,7 +13,15 @@ def index():
    spisakrestorana=["Bavka", "Dits", "ABC", "Nedodjija"]
    return render_template("index.html", 
                          naslov=naslovspiska
-                         spisak=spisakrestorana)
+                         spisak=spisakrestorana) 
+@app.route("/restoran")
+def restoran():
+   naslovrestoran="Nedodjija"
+   spisakjela=["Pica", "pasta", "giros", "Nedodjija sendvic"]
+   return render_template("restoran.html", 
+                         naslov=naslovrestoran
+                         spisak=spisakjela)
+
 
 @app.route("/primer-string")
 def string():
