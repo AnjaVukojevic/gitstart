@@ -14,7 +14,7 @@
     <p>{{ spisak }}</p>
     <ul>
         {% for stavka in spisak %}
-            <li><a href="https://gitstart-1.onrender.com/restoran">{{ stavka }}</a></li>
+            <li><a href="/restoran/{{stavka.id}}">{{ stavka }}</a></li>
         {% endfor %}
     </ul>
 </body>
