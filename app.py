@@ -6,12 +6,12 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 @app.route("/")
-def dostavaHrane():
+def dostvahrane():
     # poziv baze i preuzimanje podataka
     naslovSpiska = "Restorani"
     #spisakRestorana = ["Bavka", "Dits", "ABC", "Nedodjija"]
     # prosledjivanje podataka sablonu
-    con = sqlite3.connect("dostavahrane.db")
+    con = sqlite3.connect("dostvahrane.db")
     cur = con.cursor()
     cur.execute("SELECT id, naziv FROM restoran")
     spisakRestorana = cur.fetchall()
