@@ -11,7 +11,7 @@ def dostavaHrane():
     naslovSpiska = "Restorani"
     #spisakRestorana = ["Bavka", "Dits", "ABC", "Nedodjija"]
     # prosledjivanje podataka sablonu
-    con = sqlite3.connect("dostavaHrane.db")
+    con = sqlite3.connect("dostavahrane.db")
     cur = con.cursor()
     cur.execute("SELECT id, naziv FROM restoran")
     spisakRestorana = cur.fetchall()
