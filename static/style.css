@@ -1,1 +1,11 @@
-
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  backround-color: purple;
+  color: yellow;
+  font-family: "Gill Sans", "Gill Sans MT, "Calibri", "Trebucker";
+  font-size: 24px;
+  
